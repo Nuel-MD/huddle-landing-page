@@ -1,0 +1,197 @@
+body{
+    background-color: hsl(257, 40%, 49%);
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem; /* Base font size */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    padding-top: 1.2rem;
+    padding-left:1.8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.head svg{
+    height: 2.5rem;
+    margin: 0px;
+    width: 10rem;
+}
+
+.main{
+    flex:1;
+    padding: 2rem;
+}
+.item1{
+    height: 16rem;
+}
+.item1 > img{
+    width: 100%;
+    height: 16rem;
+}
+.item2{
+    margin-top: 3rem;
+    text-align: center;
+}
+h1{
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: white;
+}
+p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.1rem;
+}
+button{
+    margin-top: 1.25rem;
+    padding: 0.93rem;
+    width: 14rem;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    border-radius: 25px;
+    border: 0px;
+    box-shadow: 0px 6px 9px hsla(100, 0%, 0%, 0.4);
+}
+
+footer{
+    margin-bottom: 1.875rem;
+    padding-bottom: 1.25rem;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+}
+.social > div{
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 1.25rem;
+}
+
+.fa-brands{
+    color: white;
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.fa-brands:hover{
+    color: hsl(300, 69%, 71%);
+}
+.social > div:hover{
+    border-color: hsl(300, 69%, 71%);
+}
+
+/* Media Queries */
+@media(min-width: 1050px){
+    body{
+        background-image: url('./images/bg-desktop.svg');
+        background-position: left;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    .container{
+        max-width: 80vw;
+        height: 100vh;
+    }
+    .head{
+        padding-left: 0;
+    }
+    .main{
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+        padding: 0;
+    }
+    .item{
+        flex: 1;
+    }
+    .item1{
+        height: 85%;
+    }
+    .item1 > img{
+        height: 100%;
+    }
+    .item2{
+        text-align: left;
+    }
+    h1{
+        font-size: 2.5rem; /* Larger heading on bigger screens */
+    }
+    p{
+        font-size: 1.2rem; /* Adjust paragraph size */
+    }
+    .social{
+        justify-content: end;
+    }
+}
+
+@media(min-width: 500px) and (max-width: 1050px){
+    body{
+        background-image: url('./images/bg-desktop.svg');
+        background-position: left;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    .container{
+        max-width: 80vw;
+        height: 100vh;
+    }
+    .head{
+        padding-left: 0;
+    }
+    .main{
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+        padding: 0;
+    }
+    .item{
+        flex: 1;
+    }
+    .item1{
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item1 > img{
+        height: 100%;
+    }
+    .item2{
+        text-align: left;
+    }
+    h1{
+        font-size: 2rem; /* Slightly larger heading on medium screens */
+    }
+    p{
+        font-size: 1.15rem; /* Adjust paragraph size */
+    }
+    .social{
+        justify-content: end;
+    }
+}
